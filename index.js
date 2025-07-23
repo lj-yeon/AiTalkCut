@@ -19,6 +19,7 @@ app.use(cors());
 
 // JSON 형식의 요청 본문(body) 파싱 (최대 2MB)
 app.use(express.json({ limit: "2mb" }));
+
 ``;
 // __dirname 구하기 (ESM 환경에서)
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
