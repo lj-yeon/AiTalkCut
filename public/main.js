@@ -10,12 +10,13 @@ let scenes = [];
 
 // [1] "씬 10개로 나누기" 버튼 클릭 시 실행되는 함수
 splitBtn.onclick = async () => {
-  // 입력된 대본을 가져옵니다.
+  // 입력된 대본을 가져기.
   const script = scriptInput.value.trim();
   if (!script) {
     alert("대본을 입력하세요!");
     return;
   }
+
   // 버튼 비활성화 및 UI 초기화
   splitBtn.disabled = true;
   splitBtn.textContent = "분석 중...";
@@ -24,7 +25,7 @@ splitBtn.onclick = async () => {
   imageBtn.style.display = "none";
 
   try {
-    // 백엔드에 대본을 보내서 씬 분할 결과를 받아옵니다.
+    // 백엔드에 대본을 보내서 씬 분할 결과 받기
     const res = await fetch("/api/scenes", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -63,7 +64,7 @@ imageBtn.onclick = async () => {
   imagesContainer.innerHTML = "";
 
   try {
-    // 백엔드에 씬 배열을 보내서 이미지 URL을 받아옵니다.
+    // 백엔드에 씬 배열을 보내서 이미지 URL을 받기
     const res = await fetch("/api/images", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
