@@ -1,0 +1,14 @@
+# Node.js
+node_modules/
+.env
+
+# Outputs
+outputs/images/
+outputs/scenes.json
+
+# Logs
+*.log
+
+# Editor settings
+.vscode/
+.idea/
