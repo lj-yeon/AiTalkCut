@@ -3,8 +3,6 @@ import OpenAI from "openai";
 import { z } from "zod"; 
 import fs from "fs";
 import path from "path";
-import Creatomate from 'creatomate';
-import fs from 'fs';
 dotenv.config();
 
 
@@ -75,7 +73,7 @@ async function getSceneVersions(script) {
 """${script}"""
 `;
 
-  // GPT에 JSON 응답 요청
+  // OpenAI GPT에 JSON 응답 요청
   const response = await openai.chat.completions.create({
     model: "gpt-4o",
     messages: [
@@ -131,51 +129,3 @@ async function main() {
 }
 
 main();
-
-// 1. result1.json 읽기
-const scenes = JSON.parse(fs.readFileSync('result/result1.json', 'utf-8'));
-
-// 2. Creatomate elements 생성
-const elements = [];
-
-// (1) 배경 영상 전체 (result.mp4는 Creatomate에서 접근 가능한 URL이어야 함)
-elements.push(new Creatomate.Video({
-  source: 'https://your-server.com/result.mp4', // Creatomate에서 접근 가능한 URL로 변경!
-  start: 0,
-  length: 18 * 3.5 // 전체 길이
-}));
-
-// (2) 씬별 자막/음성
-for (let i = 1; i <= 18; i++) {
-  const sceneKey = `scene_${i}`;
-  const scene = scenes[sceneKey];
-  const start = (i - 1) * 3.5;
-
-  // 자막
-  elements.push(new Creatomate.Text({
-    text: scene.script,
-    start,
-    length: 3.5,
-    // 스타일, 위치 등 추가 가능
-  }));
-
-  // 음성 (씬별 mp3 파일명: scene_1.mp3, scene_2.mp3, ...)
-  elements.push(new Creatomate.Audio({
-    source: `https://your-server.com/audio/scene_${i}.mp3`, // Creatomate에서 접근 가능한 URL로 변경!
-    start,
-    length: 3.5
-  }));
-}
-
-// 3. Creatomate 렌더링 요청
-const client = new Creatomate.Client('YOUR_API_KEY');
-const source = new Creatomate.Source({
-  outputFormat: 'mp4',
-  width: 1280,
-  height: 720,
-  elements
-});
-
-client.render({ source })
-  .then((renders) => console.log('Your video is ready:', renders))
-  .catch(err => console.error('Creatomate error:', err));

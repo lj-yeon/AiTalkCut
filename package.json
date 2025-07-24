@@ -8,6 +8,7 @@
     "start": "node index.js"
   },
   "dependencies": {
+    "@google-cloud/text-to-speech": "^6.2.0",
     "axios": "^1.6.7",
     "cors": "^2.8.5",
     "creatomate": "^1.2.1",

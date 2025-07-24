@@ -1,0 +1,31 @@
+[Script Info]
+; 이 파일은 자동 생성된 ASS(Advanced SubStation Alpha) 자막 파일입니다.
+ScriptType: v4.00+
+PlayResX: 720
+PlayResY: 1280
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+; Style: 스타일명, 글꼴, 크기, 글자색, 테두리색, 배경색, 굵게, 이탤릭, 밑줄, 취소선, 가로/세로 비율, 자간, 각도, 테두리/그림자, 정렬, 여백, 인코딩
+Style: Default,Malgun Gothic,62,&H00000000,&H00000000,&H00000000,1,0,0,0,100,100,0,0,1,0,0,8,30,30,250,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:03.50,Default,,0,0,0,,눈 앞에 날파리가 떠다니는 거슬리는 비문증, 2주만에 싹 말끔해질 줄 누가 알았겠어요?
+Dialogue: 0,0:00:03.50,0:00:07.00,Default,,0,0,0,,비문증 방치하면 실명될 수도 있다고 해서 치료 받아야하나 하던 차에 친구가 이거 한번 먹어보라 하더라고요.
+Dialogue: 0,0:00:07.00,0:00:10.50,Default,,0,0,0,,그냥 하루에 한 알씩 챙겨 먹기 시작했는데 날파리 갯수가 점점 줄어들면서 시야가 맑아지는게 느껴지더라고요.
+Dialogue: 0,0:00:10.50,0:00:14.00,Default,,0,0,0,,그래서 약사 선생님한테 이거 괜찮냐고 물어봤더니 요즘 비문증 있는 사람들 사이에서는 유명한 제품이라네요.
+Dialogue: 0,0:00:14.00,0:00:17.50,Default,,0,0,0,,일단 국내 최초로 루테인, 아스타잔틴, 지아잔틴을 배합해서 만든 비문증 개선 특허 성분이 들어있는데,
+Dialogue: 0,0:00:17.50,0:00:21.00,Default,,0,0,0,,이게 유리체에 쌓인 찌꺼기를 싹 다 녹여 없애주고 노화로 약해진 망막도 개선시켜준다고 하더라구요.
+Dialogue: 0,0:00:21.00,0:00:24.50,Default,,0,0,0,,병원가도 치료 못하는거라고 해서 포기해야하나 했는데, 이거 한알씩만 먹으면 해결된다는걸 이제야 알아서 허무하네요.
+Dialogue: 0,0:00:24.50,0:00:28.00,Default,,0,0,0,,약국에서는 항상 품절상태일 정도로 인기 많아서 구하기 힘들다던데 지금 운좋게 소량입고 돼서 쟁여놨네요.
+Dialogue: 0,0:00:28.00,0:00:31.50,Default,,0,0,0,,효과 없으면 100% 환불에 지금 34% 할인까지 한다니까 비문증 때문에 고생하고 계시다면 할인할 때 싸게 사세요.
+Dialogue: 0,0:00:31.50,0:00:35.00,Default,,0,0,0,,비문증으로 고생하는 사람들의 모습이 그려진다.
+Dialogue: 0,0:00:35.00,0:00:38.50,Default,,0,0,0,,친구가 제품을 추천하는 장면.
+Dialogue: 0,0:00:38.50,0:00:42.00,Default,,0,0,0,,제품을 먹고 있는 주인공의 모습.
+Dialogue: 0,0:00:42.00,0:00:45.50,Default,,0,0,0,,주인공이 시야가 맑아지는 것을 느끼는 장면.
+Dialogue: 0,0:00:45.50,0:00:49.00,Default,,0,0,0,,약사와 상담하는 주인공의 모습.
+Dialogue: 0,0:00:49.00,0:00:52.50,Default,,0,0,0,,제품의 성분을 강조하는 장면.
+Dialogue: 0,0:00:52.50,0:00:56.00,Default,,0,0,0,,주인공이 제품을 구입하는 모습.
+Dialogue: 0,0:00:56.00,0:00:59.50,Default,,0,0,0,,할인 정보를 강조하는 장면.
+Dialogue: 0,0:00:59.50,0:01:03.00,Default,,0,0,0,,비문증이 개선된 주인공의 행복한 모습.
